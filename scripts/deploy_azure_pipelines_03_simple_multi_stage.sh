@@ -17,7 +17,7 @@ pipeline_id=$(az pipelines create \
     --description 'This pipelines is a simple two stage pipeline which builds the DACPAC and deploy to a target AzureSQLDB instance' \
     --repository "$GITHUB_REPO_URL" \
     --branch "$BRANCH_NAME" \
-    --yaml-path 'single_tech_samples/azuresql/pipelines/azure-pipelines-03-simple-multi-stage.yml' \
+    --yaml-path 'azuresql/pipelines/azure-pipelines-03-simple-multi-stage.yml' \
     --service-connection "$GITHUB_SERVICE_CONNECTION_ID" \
     --skip-first-run true \
     --output json | jq -r '.id')

@@ -96,11 +96,15 @@ export GITHUB_SERVICE_CONNECTION_ID=$(az devops service-endpoint github create \
 
 ###############
 # Deploy pipelines
-
+read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 ./scripts/deploy_azure_pipelines_01_validate_pr.sh
+read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 ./scripts/deploy_azure_pipelines_02_build.sh
+read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 ./scripts/deploy_azure_pipelines_03_simple_multi_stage.sh
+read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 ./scripts/deploy_azure_pipelines_04_multi_stage_predeploy_test.sh
+read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 
 echo "Completed deployment ${DEPLOYMENT_ID}"
 

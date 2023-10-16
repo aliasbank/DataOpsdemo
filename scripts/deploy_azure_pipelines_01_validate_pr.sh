@@ -13,5 +13,6 @@ az pipelines create \
     --description 'This pipelines validates pull requests to BRANCH_NAME' \
     --repository "$GITHUB_REPO_URL" \
     --branch "$BRANCH_NAME" \
-    --yaml-path 'single_tech_samples/azuresql/pipelines/azure-pipelines-01-validate-pr.yml' \
-    --service-connection "$GITHUB_SERVICE_CONNECTION_ID"
+    --yaml-path 'pipelines/azure-pipelines-01-validate-pr.yml' \
+    --service-connection "$GITHUB_SERVICE_CONNECTION_ID" 
+
