@@ -32,7 +32,7 @@ pipeline_id=$(az pipelines create \
     --description 'This pipeline is an advanced three stage pipeline which builds the DACPAC, deploys to a test database restored from production, and deploys to a target AzureSQLDB instance.' \
     --repository "$GITHUB_REPO_URL" \
     --branch "$BRANCH_NAME" \
-    --yaml-path 'azuresql/pipelines/azure-pipelines-04-multi-stage-predeploy-test.yml' \
+    --yaml-path 'pipelines/azure-pipelines-04-multi-stage-predeploy-test.yml' \
     --service-connection "$GITHUB_SERVICE_CONNECTION_ID" \
     --skip-first-run true \
     --output json | jq -r '.id')

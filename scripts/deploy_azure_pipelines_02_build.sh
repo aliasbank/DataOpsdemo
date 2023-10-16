@@ -13,6 +13,6 @@ az pipelines create \
     --description 'This pipelines build the DACPAC and publishes it as a Build Artifact' \
     --repository "$GITHUB_REPO_URL" \
     --branch "$BRANCH_NAME" \
-    --yaml-path 'azuresql/pipelines/azure-pipelines-02-build.yml' \
+    --yaml-path 'pipelines/azure-pipelines-02-build.yml' \
     --service-connection "$GITHUB_SERVICE_CONNECTION_ID"
 
