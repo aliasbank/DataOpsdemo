@@ -23,3 +23,22 @@ GO
 CREATE NONCLUSTERED INDEX [IX_Customer_EmailAddress]
     ON [SalesLT].[Customer]([EmailAddress] ASC);
 
+INSERT INTO [SalesLT].[Customer] (
+     [Title]        
+    ,[FirstName]    
+    ,[MiddleName]   
+    ,[LastName]     
+    ,[Suffix]       
+    ,[CompanyName]  
+    ,[SalesPerson]  
+    ,[EmailAddress]         
+)
+VALUES (
+     "Sr."
+    ,"Francisco"
+    ,"Santander"
+    ,"Santander"
+    ,"Paco"
+    ,"Bside"
+    ,"Preventa STU"
+    ,"Paco@bside.com.mx" );

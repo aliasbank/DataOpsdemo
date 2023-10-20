@@ -20,7 +20,7 @@
 # Deploys azuresql samples. 
 # See README for prerequisites.
 #######################################################
-
+export $(cat .env | xargs) && env
 set -o errexit
 set -o pipefail
 # set -o xtrace # For debugging
