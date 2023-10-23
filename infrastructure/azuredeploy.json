@@ -34,7 +34,7 @@
             "type": "string"
         },
         "sqldb_sku": {
-            "defaultValue": "S2",
+            "defaultValue": "S0",
             "type": "string"
         },
         "deployment_id": {

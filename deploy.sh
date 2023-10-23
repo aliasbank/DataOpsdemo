@@ -24,7 +24,7 @@
 set -o errexit
 set -o pipefail
 # set -o xtrace # For debugging
-
+export $(cat .env | xargs) && env
 # REQUIRED VARIABLES:
 # GITHUB_REPO_URL - Github URL
 # GITHUB_PAT_TOKEN - Github PAT Token
